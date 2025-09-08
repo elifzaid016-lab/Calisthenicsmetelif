@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Trainingsroutine</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for a clean look and responsive videos */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.5rem; /* Rounded corners for video wrapper */
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* Style for the active tab */
+        .tab-active {
+            border-color: #3b82f6; /* Blue bottom border */
+            color: #3b82f6; /* Blue text */
+            background-color: #eff6ff; /* Light blue background */
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 md:p-8">
+        
+        <a href="index.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 mb-6 transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Terug naar alle routines
+        </a>
+
+        <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Beginners Training</h1>
+
+            <!-- Tab Navigation -->
+            <div class="border-b border-gray-200 mb-6">
+                <nav class="flex space-x-2 sm:space-x-4" aria-label="Tabs">
+                    <button id="tab-upperbody" data-tab="upperbody" class="tab-button tab-active whitespace-nowrap py-3 px-4 text-base font-medium rounded-t-lg focus:outline-none transition-colors duration-200">
+                        Bovenlichaam
+                    </button>
+                    <button id="tab-legs" data-tab="legs" class="tab-button whitespace-nowrap py-3 px-4 text-base font-medium text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded-t-lg focus:outline-none transition-colors duration-200">
+                        Benen
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Tab Content -->
+            <div id="tab-content">
+                <!-- Upper Body Exercises -->
+                <div id="content-upperbody" class="tab-content-panel space-y-8">
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 1: Push ups</h2>
+                        <p class="mb-4 text-gray-600">Push ups zijn goed om je borst, armen en core sterker te maken. Als beginner kun je beginnen met je handen hoger te zetten, bijvoorbeeld tegen een tafel of bank. Hoe hoger je steunt, hoe makkelijker de oefening. Zorg dat je rug recht blijft en je buikspieren aangespannen zijn. Wanneer dit goed gaat, kun je steeds lager gaan tot je uiteindelijk normale push ups op de grond kunt doen.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/6G3gZCfQVuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 2: Scapular push-Ups</h2>
+                        <p class="mb-4 text-gray-600">Scapular push ups zijn een goede oefening om je schouders, bovenrug en core sterker te maken. Je begint in een plankpositie met gestrekte armen. In plaats van je ellebogen te buigen, beweeg je alleen je schouderbladen: duw ze uit elkaar en breng ze daarna weer rustig naar elkaar toe. Houd je armen recht en je buik aangespannen. Door steeds meer naar voren te leunen maak je de oefening moeilijker en bouw je extra kracht en stabiliteit op.</p>
+                        <div class="video-wrapper"><iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 3: Pike push ups</h2>
+                        <p class="mb-4 text-gray-600">Pike push ups zijn een goede oefening om vooral je schouders sterker te maken. Je begint in een V-vorm met je heupen omhoog en je handen stevig op de grond. Buig je armen en laat je hoofd langzaam richting de vloer zakken, duw jezelf daarna weer omhoog. Houd je buik aangespannen en je rug recht. Door steeds meer naar voren te leunen maak je de oefening moeilijker en train je je schouders nog harder.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/fZD1WiWUCL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 4: Dips</h2>
+                        <p class="mb-4 text-gray-600">Dips zijn een goede oefening om je triceps, borst en schouders sterker te maken. Begin met dips op een bank of stoel, waarbij je voeten op de grond staan. Wanneer dit makkelijker gaat, kun je naar een dipmachine gaan en eventueel een weerstandsband gebruiken voor ondersteuning. Naarmate je sterker wordt, kun je de hulp weglaten en volledige dips uitvoeren.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/R5y9x28poKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 5: Australian pull/Pull ups</h2>
+                        <p class="mb-4 text-gray-600">Australian pull ups met touwen zijn goed om je rug, biceps en core sterker te maken. Je grijpt twee touwen, houdt je lichaam recht en trekt jezelf omhoog zodat je borst richting de touwen komt. Je voeten blijven op de grond. Voor pull ups kun je eventueel een weerstandsband gebruiken voor ondersteuning. Naarmate je sterker wordt, kun je de hulp weglaten en volledige pull ups doen.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/aeAeRMjzV0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+
+                <!-- Legs Exercises -->
+                <div id="content-legs" class="tab-content-panel space-y-8 hidden">
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 6: pistol squats</h2>
+                        <p class="mb-4 text-gray-600">Pistol squats zijn een goede oefening om je benen en core sterker te maken en je balans te verbeteren. Begin door op een box, stoel of ander steunpunt te zitten en vanaf daar de beweging te oefenen. Daarna kun je ze doen terwijl je je ergens aan vasthoudt, waardoor het makkelijker wordt. Uiteindelijk kun je ze zonder steun uitvoeren, voor volledige kracht en balans.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/zYyA5LAEKSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 7: Reverse nordics</h2>
+                        <p class="mb-4 text-gray-600">Reverse nordics zijn een goede oefening om je quadriceps en core sterker te maken. Begin in een knielende positie met je lichaam recht. Leun langzaam naar achteren zonder je heupen te buigen en kom weer gecontroleerd omhoog. Houd je buik aangespannen en rug recht. Naarmate je sterker wordt, kun je verder achterover leunen voor extra intensiteit.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/c1znmF1sUzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 8: Sissy squats</h2>
+                        <p class="mb-4 text-gray-600">Sissy squats zijn een goede oefening om je quadriceps en core sterker te maken. Begin in een rechte houding, leun langzaam naar achteren terwijl je knieën buigen en je hielen op de grond blijven. Kom daarna gecontroleerd weer omhoog. Houd je buik aangespannen en rug recht. Naarmate je sterker wordt, kun je dieper gaan voor extra intensiteit.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/lMFMmH16vNw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle tab switching
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContentPanels = document.querySelectorAll('.tab-content-panel');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tab = button.dataset.tab;
+
+                // Update button styles
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('tab-active');
+                    btn.classList.add('text-gray-500', 'hover:text-blue-600', 'hover:bg-blue-50');
+                });
+                button.classList.add('tab-active');
+                button.classList.remove('text-gray-500', 'hover:text-blue-600', 'hover:bg-blue-50');
+
+                // Show/hide content panels
+                tabContentPanels.forEach(panel => {
+                    if (panel.id === `content-${tab}`) {
+                        panel.classList.remove('hidden');
+                    } else {
+                        panel.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

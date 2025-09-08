@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouderen Trainingsroutine</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for a clean look and responsive videos */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.5rem; /* Rounded corners for video wrapper */
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* Style for the active tab */
+        .tab-active {
+            border-color: #3b82f6; /* Blue bottom border */
+            color: #3b82f6; /* Blue text */
+            background-color: #eff6ff; /* Light blue background */
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 md:p-8">
+        
+        <a href="index.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 mb-6 transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Terug naar alle routines
+        </a>
+
+        <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Ouderen Training</h1>
+
+            <!-- Tab Navigation -->
+            <div class="border-b border-gray-200 mb-6">
+                <nav class="flex space-x-2 sm:space-x-4" aria-label="Tabs">
+                    <button id="tab-legs" data-tab="legs" class="tab-button tab-active whitespace-nowrap py-3 px-4 text-base font-medium rounded-t-lg focus:outline-none transition-colors duration-200">
+                        Benen
+                    </button>
+                    <button id="tab-upperbody" data-tab="upperbody" class="tab-button whitespace-nowrap py-3 px-4 text-base font-medium text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded-t-lg focus:outline-none transition-colors duration-200">
+                        Bovenlichaam
+                    </button>
+                    <button id="tab-extra" data-tab="extra" class="tab-button whitespace-nowrap py-3 px-4 text-base font-medium text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded-t-lg focus:outline-none transition-colors duration-200">
+                        Extra
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Tab Content -->
+            <div id="tab-content">
+                <!-- Legs Exercises -->
+                <div id="content-legs" class="tab-content-panel space-y-8">
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 1: Squats met stoel</h2>
+                        <p class="mb-4 text-gray-600">Dit is een oefening voor de benen en bilspieren. Het helpt om sterk genoeg te blijven om op te staan uit een stoel, lopen en traplopen. Goed voor kracht, stabiliteit en balans, waardoor dagelijkse bewegingen veiliger en makkelijker worden.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 2: Knie-extensies</h2>
+                        <p class="mb-4 text-gray-600">Dit is een oefening voor de voorkant van de benen (quadriceps). Het helpt om knieën sterk en stabiel te houden, wat nodig is voor lopen, traplopen en opstaan uit een stoel.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ANOTHER_VIDEO_ID_HERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 3: Hiel naar teen</h2>
+                        <p class="mb-4 text-gray-600">Dit is een oefening voor balans en enkels. Veel mensen krijgen op oudere leeftijd knieproblemen, en deze oefening helpt om de knieën te beschermen.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ANOTHER_VIDEO_ID_HERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 4: Step-ups</h2>
+                        <p class="mb-4 text-gray-600">Dit is een oefening voor benen en bilspieren. Het helpt om kracht, coördinatie en balans te verbeteren, wat nodig is voor dagelijkse bewegingen. Het versterkt de knieën en enkels, vermindert kans op blessures en houdt de benen actief en zelfstandig.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ANOTHER_VIDEO_ID_HERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+
+                <!-- Upper Body Exercises -->
+                <div id="content-upperbody" class="tab-content-panel space-y-8 hidden">
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 5: Schouderdruk tegen de muur</h2>
+                        <p class="mb-4 text-gray-600">Dit is een oefening voor schouders, armen en bovenrug. Erg belangrijk omdat veel mensen tegenwoordig veel zitten, waardoor de houding kan verslechteren. Het helpt om de rug recht te houden, schouders sterk te maken en nek- en rugklachten te verminderen.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 6: Muur Push-ups (Staande)</h2>
+                        <p class="mb-4 text-gray-600">Dit is een oefening voor borst, schouders en armen. Het helpt met het bovenlichaamsspieren sterk te houden.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+                
+                <!-- Extra Exercises -->
+                <div id="content-extra" class="tab-content-panel space-y-8 hidden">
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 7: Flexibiliteit/Mobiliteit</h2>
+                        <p class="mb-4 text-gray-600">Flexibiliteit en mobiliteit houden je gewrichten soepel en verminderen stijfheid, zodat bewegen makkelijker en veiliger gaat. Het helpt ook spanning in je spieren los te maken.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle tab switching
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContentPanels = document.querySelectorAll('.tab-content-panel');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tab = button.dataset.tab;
+
+                // Update button styles
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('tab-active');
+                    btn.classList.add('text-gray-500', 'hover:text-blue-600', 'hover:bg-blue-50');
+                });
+                button.classList.add('tab-active');
+                button.classList.remove('text-gray-500', 'hover:text-blue-600', 'hover:bg-blue-50');
+
+                // Show/hide content panels
+                tabContentPanels.forEach(panel => {
+                    if (panel.id === `content-${tab}`) {
+                        panel.classList.remove('hidden');
+                    } else {
+                        panel.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

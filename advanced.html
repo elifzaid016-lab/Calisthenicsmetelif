@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geavanceerde Trainingsroutine</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for a clean look and responsive videos */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.5rem; /* Rounded corners for video wrapper */
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* Style for the active tab */
+        .tab-active {
+            border-color: #3b82f6; /* Blue bottom border */
+            color: #3b82f6; /* Blue text */
+            background-color: #eff6ff; /* Light blue background */
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 md:p-8">
+        
+        <a href="index.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 mb-6 transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Terug naar alle routines
+        </a>
+
+        <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Geavanceerde Training</h1>
+
+            <!-- Tab Navigation -->
+            <div class="border-b border-gray-200 mb-6">
+                <nav class="flex space-x-2 sm:space-x-4" aria-label="Tabs">
+                    <button id="tab-upperbody" data-tab="upperbody" class="tab-button tab-active whitespace-nowrap py-3 px-4 text-base font-medium rounded-t-lg focus:outline-none transition-colors duration-200">
+                        Bovenlichaam
+                    </button>
+                    <button id="tab-legs" data-tab="legs" class="tab-button whitespace-nowrap py-3 px-4 text-base font-medium text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded-t-lg focus:outline-none transition-colors duration-200">
+                        Benen
+                    </button>
+                    <button id="tab-skills" data-tab="skills" class="tab-button whitespace-nowrap py-3 px-4 text-base font-medium text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded-t-lg focus:outline-none transition-colors duration-200">
+                        Skills
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Tab Content -->
+            <div id="tab-content">
+                <!-- Upper Body Exercises -->
+                <div id="content-upperbody" class="tab-content-panel space-y-8">
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 1: Pseudo Push-ups</h2>
+                        <p class="mb-4 text-gray-600">Pseudo push ups zijn een moeilijkere versie van normale push ups die extra kracht in je borst, schouders en triceps opbouwen. Begin in plankpositie met je handen iets naar binnen gedraaid en vingers naar voren. Zak langzaam naar beneden terwijl je je ellebogen licht naar buiten houdt, en leun hierbij bewust iets naar voren. Duw jezelf weer omhoog, houd je buik aangespannen en je rug recht. Hoe verder je naar voren leunt, hoe zwaarder de oefening wordt.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/jcLp-nJdv1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 2: Pike Push-ups</h2>
+                        <p class="mb-4 text-gray-600">Hoger pike push ups op een box zijn een uitdagende oefening voor je schouders, bovenborst en core. Plaats je voeten op een box en handen op de grond, zodat je lichaam een steile hoek vormt. Zak langzaam met je hoofd richting de grond terwijl je je armen buigt, en duw jezelf weer omhoog. Hoe hoger de box, hoe steiler je lichaam en hoe zwaarder de oefening wordt. Hiermee bouw je kracht op om later handstand push ups te kunnen doen.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/iGfN3D-S_MM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 3: Dips</h2>
+                        <p class="mb-4 text-gray-600">Dips op de dip machine zijn een goede oefening om je borst, triceps en schouders sterker te maken. Plaats je handen op de handvatten en houd je lichaam recht. Zak langzaam naar beneden door je armen te buigen, en duw jezelf weer omhoog. Houd je buik aangespannen en je rug recht. Door je lichaam iets naar voren te leunen, verleg je de focus meer naar je borst; rechtop blijft de nadruk op je triceps.</p>
+                    </div>
+                </div>
+
+                <!-- Legs Exercises -->
+                <div id="content-legs" class="tab-content-panel space-y-8 hidden">
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 4: Pistol Squats</h2>
+                        <p class="mb-4 text-gray-600">Pistol squats zijn een uitdagende eenbenige squat die je benen, billen en core versterkt. Sta op één been, strek het andere been recht voor je uit en zak langzaam door je knie terwijl je je balans houdt. Duw jezelf gecontroleerd weer omhoog. Houd je buik aangespannen en je rug recht. Hoe lager je zakt en hoe strakker je balans houdt, hoe zwaarder de oefening wordt.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/G2r_o0cZm_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 5: Reverse Nordics</h2>
+                        <p class="mb-4 text-gray-600">Reverse nordics zijn een effectieve oefening voor je quadriceps en core. Ga op je knieën zitten met je voeten vast, span je buik aan en leun langzaam naar achteren zonder je heupen te buigen. Kom gecontroleerd weer omhoog naar de startpositie. Hoe verder je naar achteren leunt, hoe zwaarder de oefening wordt.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/JkNp4-G-2bY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+
+                <!-- Skills Exercises -->
+                <div id="content-skills" class="tab-content-panel space-y-8 hidden">
+                     <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 6: Elbow Lever</h2>
+                        <p class="mb-4 text-gray-600">De elbow lever is een uitdagende core- en balansoefening die je buik, schouders en armen versterkt. Plaats je handen op de grond en leun met je lichaam naar voren, zodat je knieën of dijen op je ellebogen rusten. Span je buik strak aan en houd je lichaam zo recht mogelijk. Hoe langer je het vasthoudt, hoe zwaarder de oefening wordt.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/kyI-s42mf3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                     <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 7: L-sit</h2>
+                        <p class="mb-4 text-gray-600">De L-sit is een uitdagende core- en armkracht-oefening die je buik, heupflexoren en schouders versterkt. Plaats je handen op de grond of op dip bars, duw jezelf omhoog en strek je benen recht voor je uit zodat je lichaam een “L” vormt. Houd je buik strak en je rug recht. Hoe langer je het vasthoudt, hoe zwaarder de oefening wordt. In de video is te zien hoe je stap voor stap naar de volledige L-sit kunt werken.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/I-_F1qaYgGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                     <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 8: Frog/Crow Pose</h2>
+                        <p class="mb-4 text-gray-600">De frog pose is een goede start om kracht en balans in je armen en core te ontwikkelen. Plaats je knieën op je ellebogen en houd je handen stevig op de grond. De crow pose is een moeilijkere variant, waarbij je lichaam verder naar voren leunt en alleen op je handen steunt. Beide oefeningen versterken je armen, schouders en buik, en zijn een uitstekende voorbereiding om later een handstand te leren.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/jTSirk3k2wY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                     <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 9: Tuck Front Lever</h2>
+                        <p class="mb-4 text-gray-600">De tuck front lever is een uitdagende core- en rugoefening die je buik, schouders en rug versterkt. Hang aan een stang en trek je knieën op naar je borst terwijl je lichaam recht blijft, zodat je in een “tuck” positie horizontaal hangt. Span je buik strak aan en houd je rug recht. Hoe langer je het vasthoudt, hoe zwaarder de oefening wordt.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/NAnryyvfxuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                     <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-semibold mb-2">Oefening 10: Tuck Planche</h2>
+                        <p class="mb-4 text-gray-600">De tuck planche is een uitdagende oefening voor je schouders, armen, core en rug. Plaats je handen op de grond of op parallettes en til je voeten van de grond terwijl je knieën naar je borst brengt, zodat je lichaam in een compacte “tuck” positie zweeft. Span je buik strak aan en houd je rug recht. Hoe langer je het vasthoudt, hoe zwaarder de oefening wordt en hoe meer kracht je opbouwt voor gevorderde planche-varianten.</p>
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/M0_abQyCIgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle tab switching
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContentPanels = document.querySelectorAll('.tab-content-panel');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tab = button.dataset.tab;
+
+                // Update button styles
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('tab-active');
+                    btn.classList.add('text-gray-500', 'hover:text-blue-600', 'hover:bg-blue-50');
+                });
+                button.classList.add('tab-active');
+                button.classList.remove('text-gray-500', 'hover:text-blue-600', 'hover:bg-blue-50');
+
+                // Show/hide content panels
+                tabContentPanels.forEach(panel => {
+                    if (panel.id === `content-${tab}`) {
+                        panel.classList.remove('hidden');
+                    } else {
+                        panel.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
