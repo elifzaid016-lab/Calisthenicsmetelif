@@ -149,32 +149,33 @@
     </div>
 
     <script>
-        // JavaScript om tabbladen te wisselen
-        const tabButtons = document.querySelectorAll('.tab-button');
-        const tabContentPanels = document.querySelectorAll('.tab-content-panel');
+    // Gebruik een robuustere selector om alle knoppen te vinden
+    const tabButtons = document.querySelectorAll('#tab-upperbody, #tab-legs, #tab-skills');
+    const tabContentPanels = document.querySelectorAll('.tab-content-panel');
 
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const tab = button.dataset.tab;
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const tab = button.dataset.tab;
 
-                // Update button styles
-                tabButtons.forEach(btn => {
-                    btn.classList.remove('tab-active');
-                    btn.classList.add('text-gray-500', 'hover:text-blue-600', 'hover:bg-blue-50');
-                });
-                button.classList.add('tab-active');
-                button.classList.remove('text-gray-500', 'hover:text-blue-600', 'hover:bg-blue-50');
+            // 1. Update button styles
+            tabButtons.forEach(btn => {
+                btn.classList.remove('tab-active');
+                btn.classList.add('text-gray-500', 'hover:text-blue-600', 'hover:bg-blue-50');
+            });
+            button.classList.add('tab-active');
+            button.classList.remove('text-gray-500', 'hover:text-blue-600', 'hover:bg-blue-50');
 
-                // Show/hide content panels
-                tabContentPanels.forEach(panel => {
-                    if (panel.id === `content-${tab}`) {
-                        panel.classList.remove('hidden');
-                    } else {
-                        panel.classList.add('hidden');
-                    }
-                });
+            // 2. Show/hide content panels
+            tabContentPanels.forEach(panel => {
+                if (panel.id === `content-${tab}`) {
+                    panel.classList.remove('hidden');
+                } else {
+                    panel.classList.add('hidden');
+                }
             });
         });
-    </script>
+    });
+</script>
 </body>
 </html>
+
